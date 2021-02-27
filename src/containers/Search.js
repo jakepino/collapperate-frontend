@@ -18,6 +18,7 @@ export default class Search extends React.Component {
 	seeProfile = (user) => {
 		this.setState({
 			seeProfile: user,
+			search: "",
 		});
 	};
 

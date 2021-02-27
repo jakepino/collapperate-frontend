@@ -13,9 +13,13 @@ export default class Table extends React.Component {
 				casting_type,
 				unsolicited_submissions,
 			} = resource;
+
+			const castingString = casting_type.join(", ");
+
 			const booleanString =
 				unsolicited_submissions.toString().charAt(0).toUpperCase() +
 				unsolicited_submissions.toString().slice(1);
+
 			return (
 				<tr key={id}>
 					<td>{index + 1}</td>
@@ -24,7 +28,7 @@ export default class Table extends React.Component {
 					<td>{location}</td>
 					<td>{name}</td>
 					<td>{contact_info}</td>
-					<td>{casting_type}</td>
+					<td>{castingString}</td>
 					<td>{booleanString}</td>
 				</tr>
 			);

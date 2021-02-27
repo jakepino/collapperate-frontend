@@ -6,6 +6,7 @@ export default class OtherProfile extends React.Component {
 			<div className="profile-container">
 				<div className="image-container">
 					<p className="name">{this.props.user.name}</p>
+					<p className="name">{this.props.user.email}</p>
 					<img src={this.props.user.image_url} alt={"No pic yet"} />{" "}
 				</div>
 				<div className="bio">

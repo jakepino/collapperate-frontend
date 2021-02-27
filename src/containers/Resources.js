@@ -26,12 +26,16 @@ export default class Resources extends React.Component {
 					.toLowerCase()
 					.includes(this.state.search.toLowerCase()) ||
 				resource.casting_type
+					.join(", ")
 					.toLowerCase()
 					.includes(this.state.search.toLowerCase()) ||
 				resource.location
 					.toLowerCase()
 					.includes(this.state.search.toLowerCase()) ||
-				resource.company.toLowerCase().includes(this.state.search.toLowerCase())
+				resource.company
+					.toLowerCase()
+					.includes(this.state.search.toLowerCase()) ||
+				resource.name.toLowerCase().includes(this.state.search.toLowerCase())
 		);
 		return (
 			<div>

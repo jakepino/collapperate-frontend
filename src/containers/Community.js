@@ -41,7 +41,7 @@ export default class Community extends React.Component {
 			.then((response) => response.json())
 			.then((data) => {
 				this.setState({
-					posts: [data, ...this.state.posts],
+					posts: [...this.state.posts, data],
 					postTitle: "",
 					postContent: "",
 					showForm: false,

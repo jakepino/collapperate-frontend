@@ -67,7 +67,8 @@ class App extends React.Component {
 					{this.state.view === "" ? (
 						<div id="welcome">
 							Welcome to Collapperate, <br></br>
-							please login{" "}
+							please login
+							<br></br>
 							<div className="login" onClick={() => this.handleView("login")}>
 								{" "}
 								Login
